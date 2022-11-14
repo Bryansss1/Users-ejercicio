@@ -11,7 +11,6 @@ const UserLIstv = ({list,select,load}) => {
     const [userdelete,setUserdelete]=useState(null)
 
     const deletexd=(user)=>{
-        alert("quieres elimianr?")
         setSure(true)
         if(yes===true){
         actu(user)

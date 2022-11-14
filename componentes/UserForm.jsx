@@ -171,7 +171,7 @@ const ligthhh=()=>{
             </div>
 
             <div className='input-part'>
-            <label htmlFor='brd'></label>
+            <label htmlFor='brd'>Birthday</label>
             <input {...register("birthday")} type="date" placeholder='birthday/cumpleaños' id='brd'/>
             </div>
             <button className='botoncito'>Submint</button>
