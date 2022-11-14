@@ -130,7 +130,11 @@ const ligthhh=()=>{
     setMode(true)
     setBack(ligth)
 }
-    return (
+const formquit=()=>{
+    setInitial(false) 
+    setAgg(true)
+}    
+return (
         <div>
             <section className='principal'>
                 <div>
@@ -145,7 +149,6 @@ const ligthhh=()=>{
                 document.body.style=ligth}}><i className='bx bx-sun'></i></button>}
                 
             </section>
-           
 
             {agg?(
             <div className='aggg' onClick={()=>aggbutton()}>
@@ -153,10 +156,11 @@ const ligthhh=()=>{
             </div>
             ):""}
 
-
             {initialll?(
     <article className='Form-user'>
+        
         <form action='' onSubmit={handleSubmit(summit)}>
+            <i onClick={()=>{formquit()}} className='bx bx-x zzz'></i>
             <div className='input-part'>
             <label htmlFor='email'>Email</label>
             <input {...register("email")} type="email" placeholder='Email/correo' id='email'/>
