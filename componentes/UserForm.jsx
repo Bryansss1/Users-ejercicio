@@ -88,6 +88,7 @@ localStorage.setItem("darkmodee",back)
     const selectt=(user)=>{
         setSelectuser(user)
         setInitial(true)
+        setAgg(false)
     }
 
 const up=(userr)=>{
@@ -160,14 +161,16 @@ return (
     <article className='Form-user'>
         
         <form action='' onSubmit={handleSubmit(summit)}>
+            <div className='xquit'>
             <i onClick={()=>{formquit()}} className='bx bx-x zzz'></i>
+            </div>
             <div className='input-part'>
-            <label htmlFor='email'>Email</label>
+            <label htmlFor='email'>Email <i className='bx bxs-envelope'></i></label>
             <input {...register("email")} type="email" placeholder='Email/correo' id='email'/>
             </div>
 
             <div className='input-part'>
-            <label htmlFor='passwordd'>Password</label>
+            <label htmlFor='passwordd'>Password <i className='bx bxs-lock'></i></label>
             <input {...register("password")} type="text" placeholder='password/contraseña' id='passwordd' required=""/>
             <button type='button' onClick={()=>setShow(!show)}>{show?<i className='bx bx-low-vision'></i>:<i className='bx bxs-show'></i>}</button>
             </div>
@@ -183,7 +186,7 @@ return (
             </div>
 
             <div className='input-part'>
-            <label htmlFor='brd'>Birthday</label>
+            <label htmlFor='brd'>Birthday <i className='bx bxs-cake'></i></label>
             <input {...register("birthday")} type="date" placeholder='birthday/cumpleaños' id='brd'/>
             </div>
             <button className='botoncito'>Submint</button>

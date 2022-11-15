@@ -49,8 +49,8 @@ const actu=(user)=>{
                             <p><i className='bx bx-calendar'></i> {user.birthday}</p>
                             <button onClick={()=>{
                                 deletexd(user)
-                               setUserdelete(user) }}>delete</button>
-                            <button onClick={()=>select(user)}>Select</button>
+                               setUserdelete(user) }}><i className='bx bx-trash botonggg' ></i></button>
+                            <button onClick={()=>select(user)}><i className='bx bx-edit-alt botonggg' ></i></button>
                         </li>
                         </ul>
                     )

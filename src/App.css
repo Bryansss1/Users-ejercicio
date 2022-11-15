@@ -243,12 +243,18 @@ margin-right: .5rem;
     font-size: 2rem;
 }
 .zzz{
-   background-color: black;
+    background-color: black;
    border-radius: 30%;
     font-size: 2rem;
-    position: relative;
-    left: 10rem;
-    top: 1rem;
+    margin-top:.5rem;
+}
+.xquit{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.botonggg{
+    font-size: 1.4rem;
 }
 @media screen and (min-width:650px){
     .users{
