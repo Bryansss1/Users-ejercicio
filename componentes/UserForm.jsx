@@ -171,7 +171,7 @@ return (
 
             <div className='input-part'>
             <label htmlFor='passwordd'>Password <i className='bx bxs-lock'></i></label>
-            <input {...register("password")} type="text" placeholder='password/contraseña' id='passwordd' required=""/>
+            <input {...register("password")} type={show?"text":"password"} placeholder='password/contraseña' id='passwordd' required=""/>
             <button type='button' onClick={()=>setShow(!show)}>{show?<i className='bx bx-low-vision'></i>:<i className='bx bxs-show'></i>}</button>
             </div>
 
