@@ -142,7 +142,6 @@ return (
                 <h2>USERS CRUD</h2>
                 <small> @bryansss1</small>
                 </div>
-            <a href='https://www.youtube.com/watch?v=s6zrzOgh4CI' target="blank_"><img onClick={()=>alert("creador by bryansss1")} className='lobo' src="https://cdn.icon-icons.com/icons2/1446/PNG/512/22217wolfface_98825.png"/></a>
             {mode?<button className='darkmode' onClick={()=>{
                    darkk()
                 document.body.style=dark}}><i className='bx bx-moon'></i></button> 
