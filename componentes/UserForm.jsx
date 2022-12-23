@@ -23,7 +23,7 @@ const UserForm = () => {
 
 
     useEffect(()=>{
-        axios.get("https://users-crud1.herokuapp.com/users/")
+        axios.get("https://users-crud.academlo.tech/users/")
         .then(res=>{ 
                      setUsers(res.data)})
              
@@ -43,7 +43,7 @@ localStorage.setItem("darkmodee",back)
 },[back,])
 
     const load=()=>{
-        axios.get("https://users-crud1.herokuapp.com/users/")
+        axios.get("https://users-crud.academlo.tech/users/")
         .then(res=>setUsers(res.data))
     }
 
@@ -52,7 +52,7 @@ localStorage.setItem("darkmodee",back)
         if(userSelect!==null){
           up(user)
         }else{
-            axios.post(`https://users-crud1.herokuapp.com/users/`,user)
+            axios.post(`https://users-crud.academlo.tech/users/`,user)
             .then(()=>{
                 truee()
                 load()
@@ -93,7 +93,8 @@ localStorage.setItem("darkmodee",back)
 
 const up=(userr)=>{
     console.log(userr)
-    axios.put(`https://users-crud1.herokuapp.com/users/${userSelect.id}/`,userr)
+    
+    axios.put(`https://users-crud.academlo.tech/users/${userSelect.id}/`,userr)
     .then(()=>{
             truee()
         load()
@@ -151,7 +152,7 @@ return (
             </section>
 
             {agg?(
-            <div className='aggg' onClick={()=>aggbutton()}>
+            <div style={{marginTop:"4rem"}} className='aggg' onClick={()=>aggbutton()}>
             <h3>Users <i className='bx bxs-user-plus'></i></h3>
             </div>
             ):""}

@@ -21,7 +21,7 @@ const UserLIstv = ({list,select,load}) => {
 const actu=(user)=>{
     setYes(true)
     setSure(false)
-    axios.delete(`https://users-crud1.herokuapp.com/users/${user.id}/`)
+    axios.delete(`https://users-crud.academlo.tech/users/${user.id}/`)
     .then(()=>{
     setYes(false)
     load()
@@ -40,7 +40,7 @@ const actu=(user)=>{
             </div>
             </div>):""}
          
-                {list.length===0?<h3>Create users!</h3>:list.map(user=>{
+                {list.length===0?<h3 style={{color:"whitesmoke",textShadow:"1px 1px 1px black"}}>Create users!</h3>:list.map(user=>{
                     return(
                         <ul className='user' key={user.id}>
                         <li>

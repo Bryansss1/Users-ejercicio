@@ -229,6 +229,7 @@ margin-right: .5rem;
     color: white;
 }
 .principal{
+    padding: .4rem;
     width: 100%;
     color: white;
     display: flex;
@@ -236,7 +237,7 @@ margin-right: .5rem;
     justify-content: space-around;
     margin: auto;
     text-align: center;
-    border-bottom: 2px solid rgb(53, 53, 54);
+    border-bottom: 2px solid rgba(53, 53, 54, 0.596);
     text-shadow: 2px 2px 2px  black;
 }
 .principal h2{
